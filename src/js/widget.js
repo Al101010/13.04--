@@ -1,4 +1,4 @@
-import isValidInn from './validators';
+// import isValidInn from './validators';
 
 // export default class InnFormWidget {
 //   constructor(parentEl) {
