@@ -6,7 +6,6 @@ test('should be false if inn length less then 10', () => {
   expect(result).toBe(false);
 });
 
-
 test('should be false if inn length more then 10', () => {
   const result = isValidInn('fdfasdfsadadfasdfasdfasdfadfa');
 

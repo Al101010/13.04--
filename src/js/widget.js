@@ -1,6 +1,6 @@
-import isValidInn from "./validators";
+import isValidInn from './validators';
 
-export class InnFormWidget {
+export default class InnFormWidget {
   constructor(parentEl) {
     this.parentEl = parentEl;
 
@@ -44,9 +44,9 @@ export class InnFormWidget {
   onSubmit(e) {
     e.preventDefault();
 
-    const value = this.input.value;
+    const { value } = this.input.value;
 
-    if(isValidInn(value)) {
+    if (isValidInn(value)) {
       this.input.classList.add('valid');
       this.input.classList.remove('invalid');
     } else {
